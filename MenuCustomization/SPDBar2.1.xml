@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<CustomMenus>
+	<CustomMenu id="basic" name="TechLog">	
+	</CustomMenu>
+		
+	<CustomMenu id="routine" name="Oбработка"> <!-- Первая буква - латинская -->
+		<folder id="plt" text="ПЛТ" pixmap="User\MenuCustomization\32x32\plt.png">		
+			<label>Интерпретация ГИС инжекторов</label>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\prepar.jpg" text="Создание папки скважины" path="User\PLT_preparation" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\plt.png" text="Загрузка в масштабе 1:200" path="User\PLT_injection_200" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\plt.png" text="Загрузка в масштабе 1:500" path="User\PLT_injection_500" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\layout.png" text="Генерация диаграммы" path="User\PLT_injection_plot" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\rename.png" text="Исправить старый датасет" path="User\PLT_injection_rename_var" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\plt.png" text="Расчет сплитов" path="User\PLT_injection_split" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\plt.png" text="Генерация отчета" path="User\PLT_injection_report"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\cflow.png" text="Пересчитать сплит при ЗКЦ" path="User\PLT_crossflow"/>
+			<separator/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\profm.png" text="Печать диаграмм" path="User\PLT_print" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\reprnt.png" text="Перепечатать диаграммы" path="User\PLT_REprint" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\email.png" text="Отправка отчетов" path="User\PLT_email" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\files.png" text="Отправка файлов" path="User\OIS_send_files" />
+			<separator/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\stat.png" text="Открытие OIS-таблицы" path="User\PLT_OIS_open" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\excel.png" text="Отправка OIS-таблицы" path="User\OIS_send_xls_sheet" />
+			<separator/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\bin.png" text="Удалить мусорные датасеты" path="User\PLT_injection_clean_well" />
+		</folder>
+		<folder id="ois" text="Сплиты" pixmap="User\MenuCustomization\32x32\zone.png">
+			<label>Работа со сплитами</label>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\prepar.jpg" text="Создание папки и открытие сервера" path="User\OIS_preparation" />			
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\ois.png" text="Расчет сплита" path="User\OIS" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\horiz.png" text="Перфорация в гориз.скважине" path="User\OIS_horiz_wells" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\zone.png" text="Добавить TD в ZONES" path="User\Taras_add_TD" />
+			<Layout text="Генерация диаграммы CBL_CMT" path="User\PPeval_CBL_CMT"/>
+			<Layout text="Генерация диаграммы CBL_ALFK" path="User\PPeval_CBL_ALFK"/>
+			<Layout text="Генерация диаграммы CBL_BI" path="User\PPeval_CBL_BI"/>
+			<Layout text="Генерация диаграммы HRZ" path="User\HORIZ_ST_WELLS"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\ois.png" text="Проверка текущего сплита" path="User\OIS_check" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\stat.png" text="Открытие OIS-таблицы" path="User\PLT_OIS_open" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\excel.png" text="Отправка OIS-таблицы" path="User\OIS_send_xls_sheet" />
+			<separator/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\email.png" text="Отправка отчета" path="User\OIS_Send_print" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\files.png" text="Отправка файлов" path="User\OIS_send_files" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\profm.png" text="Печать диаграммы в ОФМ" path="User\Print_OFM" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\profm.png" text="Печать диаграммы по Ачимову в ОФМ" path="User\Print_OFM_ACH" />
+		</folder>
+		<folder id="akc" text="АКЦ" pixmap="User\MenuCustomization\32x32\cbl.png">
+			<label>Работа с АКЦ</label>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\prepar.jpg" text="Создание папки" path="User\CBL_preparation" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\fldr.png" text="Открыть папку АКЦ на сервере" path="User\CBL_well_folder" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\cbl.png" text="Загрузка лас-файла АКЦ" path="User\CBL_receive" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\cbl.png" text="Проверка датасета CBL" path="User\CBL_check_rename" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\cbl.png" text="Запуска скрипта АКЦ AWI(датасет)" path="User\Taras_CBL_Bond_Index_run" />
+			<separator/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\field.png" text="Расчет АКЦ для CementTrackingSheet" path="User\CBL_BI_calc_run" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\excel.png" text="Открыть CementTrackingSheet" path="User\CBL_open_cts" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\cbl.png" text="Расчет качества АКЦ по транспорту" path="User\CBL_transport_full_run" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\excel.png" text="Открыть CBL-transport-HRZ" path="User\CBL_open_transp_rep" />
+			<separator/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\layout.png" text="Генерация диаграммы ГИС-АКЦ" path="User\CBL_plot_PPeval" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\profm.png" text="Печать диаграммы в ОФМ" path="User\Print_OFM" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\field.png" text="Рассчет кумулятивного CBI" path="User\Taras_Cmt_quality" />
+		</folder>
+		<folder id="edm" text="ЕДМ" pixmap="User\MenuCustomization\32x32\edm.png">
+			<label>Посадка муфт на ЛМ</label>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\edm.png" text="Загрузка муфт из ЕДМ" path="User\EDM_Connection_1st" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\edm.png" text="Выгрузка муфт в ЕДМ" path="User\EDM_Load_2nd" />
+		</folder>
+		<folder id="re" text="Диаграммы RE" pixmap="User\MenuCustomization\32x32\re.png">
+			<label>Выгрузка диаграмм для RE</label>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\re.png" text="Генерация диаграммы" path="User\Correlation_panels_create" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\re.png" text="Печать диаграммы в ОФМ" path="User\Correlation_panels_print" />
+		</folder>
+		<folder id="utl" text="Утилиты"  pixmap="User\MenuCustomization\32x32\utils.png">
+			<label>Полезные скрипты</label>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\ppeval.png" text="Печать диаграммы по скважине" path="User\PPEVAL_PRINT"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\search.png" text="Поиск скважин" path="User\Taras_well_seek" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\profm.png" text="Печать диаграммы в ОФМ" path="User\Print_OFM" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\perf.png" text="Интервалы перфораций в скважине" path="User\Taras_PERF_FINAL_check" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\top_z.png" text="Удаление TOP_ZONE" path="User\Taras_delete_TopZone" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\perf.png" text="Выгрузка интервалов перфораций в C:\Apps" path="User\PERF_download_results" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\plt.png" text="Поиск ближайших инжекторов" path="User\PPEVAL_Injectors_seeking" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\calculator.png" text="Калькулятор глубин" path="User\Taras_tvdss_calculator_v2" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\recall.png" text="Выгрузка логов до Черкашина для опер.геолога" path="User\Taras_Cherkashin_request" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\exp.png" text="Выгрузка скважин в Send_xml" path="User\Taras_export_wells_Send_xml"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\axex.png" text="Координаты устья скважины из DGR" path="User\Taras_surface_well_coord"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\fldr.png" text="Открыть папку скважины на сервере" path="User\Taras_well_folder" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\prepar.jpg" text="Статистика ФЕС по скважине" path="User\Taras_md_phi_perm_calc" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\top.png" text="Загрузка данных в TOPHOLE" path="User\Taras_TopHole_upload" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\lwd.png" text="Добавить _HRZ в название скважины" path="User\HRZ_rename" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\email.png" text="Письмо в ГТИ об отсутствии данных" path="User\Mudlog_email_check" />
+		</folder>
+	</CustomMenu>
+
+	<CustomMenu id="pp_eval" name="Интерпретация"> <!-- Первая буква - латинская -->
+		<folder id="pp" text="Каротаж" pixmap="User\MenuCustomization\32x32\pp.png">
+			<label>Интепретация каротажа</label>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\import.png" text="Импорт MAIN" path="User\PPEVAL_import_main" />
+			<Layout pixmap="User\MenuCustomization\32x32\tops.png" text="Корреляция отбивок" path="User\Picking_tops"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\ppeval.png" text="Главный расчетный скрипт" path="User\PPEVAL_MAIN_DI_LITH" />
+			<separator/>
+			<label>Запуск шаблонов</label>
+			<Layout text="Combo" text="Диаграмма КНГФ" path="User\SCOMBO"/>
+			<Layout text="PEX" text="Диаграмма SLB" path="User\PEX" />
+			<MultiHistogram2D  text="Гистограмма RHOZ" path="User\Bulk Density"/>
+			<MultiHistogram2D  text="Гистограмма TNPH" path="User\Neutron Porosity"/>
+			<separator/>
+			<label>Генерация отчетов</label>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\layout.png" text="Генерация диаграмм" path="User\Taras_Finalize_PP_auto_report_create_pic" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\profm.png" text="Печать отчетных диаграмм" path="User\Taras_Finalize_PP_auto_report_print_pic" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\excel.png" text="Генерация Excel-отчета" path="User\Taras_Finalize_PP_auto_report"/>
+			<separator/>
+			<label>Утилиты</label>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\fflag.png" text="Быстрый net pay" path="User\PPEVAL_quick_netpay" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\import.png" text="Подготовка MAIN к AWI-скрипту" path="User\PPEVAL_MAIN_AWI_preparation" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\ppeval.png" text="Запуск расчетного скрипта чз AWI" path="User\PPEVAL_MAIN_AWI_psv1_run" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\rep.png" text="Генерация таблицы отчета" path="User\PPEVAL_REPORTING_NEW_run" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\prpic.png" text="Печать диаграмм" path="User\PPEVAL_PIC" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\email.png" text="Генерация PPeval рассылки" path="User\PPEVAL_email"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\email.png" text="Генерация SwellFix рассылки" path="User\PPEVAL_email_swellfix"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\recall.png" text="Выгрузка быстрого ласа для СПД и ГПН" path="User\PPEVAL_RECALL" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\petrel.png" text="Выгрузка финального ласа для СПД и ГПН" path="User\PPEVAL_FINAL_PETREL" />
+			<separator/>
+			<label>Проверка данных</label>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\field.png" text="Проверка Field-Las" path="User\Taras_import_FieldLas" />
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\relog.png" text="Проверка Log-Relog" path="User\Taras_importRelog" />
+		</folder>
+	</CustomMenu>
+		
+	<CustomMenu id="petrel" name="Petrel">
+		<folder id="petrel" text="Петрел" pixmap="User\MenuCustomization\32x32\petrel.png">
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\petrel.png" text="Выгрузка инклинометри и веллхедов на Petrel-сервер" path="User\Taras_Facies_map_dev_wh"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\petrel.png" text="Выгрузка финальных логов на Petrel-сервер" path="User\Taras_Facies_map_logs"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\petrel.png" text="Выгрузка данных по насыщению на Petrel-сервер" path="User\Taras_Facies_map_saturation"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\petrel.png" text="Выгрузка перфорации на Petrel-сервер" path="User\Taras_Facies_map_perf"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\petrel.png" text="Письмо GE-E о добавлении скважины на сервер" path="User\Taras_Facies_map_email"/>
+		</folder>
+	</CustomMenu>
+		
+	<CustomMenu id="test" name="Полигон">
+		<folder id="test" text="Бета-тест" pixmap="User\MenuCustomization\32x32\wreck.png">
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\wreck.png" text="Генерация диаграмм для ПЛТ 2.0" path="User\PLT_grand_report_create_v1.0"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\wreck.png" text="Печать диаграмм для ПЛТ 2.0" path="User\PLT_grand_report_print_v1.0"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\wreck.png" text="Генерация отчета ПЛТ 2.0" path="User\PLT_grand_report_v1.0"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\wreck.png" text="Выгрузка ЗЧВ по объектам - бета" path="User\Taras_FWL_list_creation"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\wreck.png" text="Поиск данных в папках на сервере" path="User\Taras_search_global"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\wreck.png" text="Глубина кондуктора vs АКЦ" path="User\Taras_conductor_depth"/>
+		</folder>
+	</CustomMenu>	
+			
+	<CustomMenu id="help_spd" name="Прочее">
+		<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\help.png" text="Settings" path="User\Settings" />
+	</CustomMenu>
+	
+	
+	<CustomMenu id="pp_update" name="Переинтерпретация">
+		<folder id="pp_update" text="Переинтерпретация" pixmap="User\MenuCustomization\32x32\pp.png">
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\resbin.png" text="Очистить скважину" path="User\Taras_UPDATE_PP_final_clear_duplicate_well"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\layout.png" text="Сгенерерировать диаграммы" path="User\Taras_UPDATE_PP_final_create_pic"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\profm.png" text="Распечатать диаграммы в папку скважины" path="User\Taras_UPDATE_PP_final_print_pic"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\pp.png" text="Сформировать финальный отчет" path="User\Taras_UPDATE_PP_final"/>
+			<separator/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\wreck.png" text="Сравнить MAIN и ZONATION" path="User\Taras_UPDATE_PP_MD_check"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\wreck.png" text="Переформатировать TNPH-RHOZ-DLIS" path="User\Taras_UPDATE_PP_neu_dens_update"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\wreck.png" text="Сгенерировать Origins" path="User\Taras_UPDATE_PP_final_DenNeu-orig"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\wreck.png" text="Проверить целостность зон" path="User\Taras_UPDATE_PP_final_zone_check"/>
+			<separator/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\python.jpg" text="WS_legacy_v3" path="User\Taras_UPDATE_PP_final_WS_legacy_v3"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\python.jpg" text="US_legacy_v2" path="User\Taras_UPDATE_PP_final_US_legacy_v2"/>
+		</folder>
+	</CustomMenu>
+		
+	<CustomMenu id="lwd" name="LWD">
+		<folder id="lwd" text="LWD" pixmap="User\MenuCustomization\32x32\lwd.png">
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\well.png" text="Создать скважину в проекте" path="User\Taras_BH_well_create"/>
+			<separator/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\inc.png" text="Загрузить инклинометрию" path="User\Taras_BH_upload_deviation"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\las.png" text="Загрузить лас-файл" path="User\Taras_BH_upload_las2"/>
+			<separator/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\prepar.jpg" text="Создать список на переименование" path="User\Taras_BH_names_in_WellProp"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\zone.png" text="Указать граничные значения" path="User\Taras_BH_thresholds"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\relog.png" text="Загрузить плановую траекторию" path="User\Taras_BH_import_rev_trjc"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\gas.png" text="Загрузить газопоказания Excel" path="User\Taras_BH_upload_Gas"/>
+			<separator/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\exp.png" text="Переназвать переменные в LAS" path="User\Taras_BH_rename_las_vars"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\zone.png" text="Добавить/дополнить ZONATION" path="User\Taras_BH_zonation"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\layout.png" text="Сформировать диаграмму" path="User\Taras_BH_plot_creation"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\fflag.png" text="Пересчитать Fluid_flag" path="User\Taras_BH_fluid_flag"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\stat.png" text="Посчитать статистику" path="User\Taras_BH_create_index_var"/>
+			<separator/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\layout.png" text="Сформировать диаграмму HRZ" path="User\HRZ_create_plot"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\prpic.png" text="Распечатать диаграмму HRZ" path="User\HRZ_print_plot"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\qc.png" text="Коэфф.качества HRZ" path="User\HRZ_qc"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\zone.png" text="Загрузить названия траекторий поинтервально" path="User\Taras_BH_import_rev_zones"/>
+			<separator/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\email.png" text="Отправить письмо о дежурстве" path="User\Taras_BH_monitoring_email"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\field.png" text="Загрузка и проверка данных MEM" path="User\Taras_BH_upload_mem_data"/>
+		</folder>
+	</CustomMenu>
+	
+	<CustomMenu id="PLT_prod" name="PLT Produces">
+		<folder id="PLT_prod" text="PLT Produces" pixmap="User\MenuCustomization\32x32\axey.png">
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\prepar.jpg" text="Создание папки скважины" path="User\PLT_Y-Tool_create_folder"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\axey.png" text="Загрузка данных Y-tool" path="User\PLT_Y-Tool_import_ds"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\axey.png" text="Генерация оценочной диаграммы Y-tool(датасет)" path="User\PLT_Y-Tool_print_short"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\axey.png" text="Переименование IFLO/DFLO(датасет)" path="User\PLT_Y-Tool_rename"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\axey.png" text="Генерация диаграммы Y-tool(датасет)" path="User\PLT_Y-Tool_print"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\axey.png" text="Скорректировать сплит вручную (датасет)" path="User\PLT_Y-Tool_change_split"/>
+			<separator/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\axey.png" text="Генерация отчета(датасет)" path="User\PLT_Y-Tool_report"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\axey.png" text="Отправка писем (датасет)" path="User\PLT_Y-Tool_email"/>
+			<separator/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\jetpump.png" text="Загрузка данных JetPump" path="User\PLT_JP_import_ds"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\jetpump.png" text="Генерация диаграммы JetPump(датасет)" path="User\PLT_JP_print_short"/>
+			<PythonEditor silentMode="1" pixmap="User\MenuCustomization\32x32\jetpump.png" text="Отправка писем (датасет)" path="User\PLT_JP_email"/>
+			
+		</folder>
+	</CustomMenu>
+		
+	<TBarAdvancedOrganizer>
+		<area id="SPDBar2.0" label="SPD Bar 2.1" tooltip="Автор Тарас Д.">
+			<group id="basic" nbBigItems="5" nbRows="1">
+				<action id="ImportData"/>
+				<action id="ExportData"/>
+				<dynamicMenu id="data" title="Data" icon="Layout" big="1">
+					<action id="MultiWellLayout"/>
+					<action id="DataEditor"/>
+					<action id="TVDComputation"/>
+					<action id="MultiWellHistogram"/>
+				</dynamicMenu>
+				<dynamicMenu id="basic" title="Python" icon="Python" big="1">
+					<action id="PythonOpenEmpty"/>
+					<action id="PythonOpenExist"/>
+					<action id="PythonWorkFlow"/>
+				</dynamicMenu>
+			</group>
+			<group id="routine" nbBigItems="7" nbRows="1">
+				<menu id="plt"/>
+				<menu id="ois"/>
+				<menu id="akc"/>
+				<menu id="edm"/>
+				<menu id="re"/>
+				<menu id="utl"/>
+			</group>	
+			<group id="pp_eval" nbBigItems="1" nbRows="1">
+				<menu id="pp"/>
+			</group>
+			<group id="petrel" nbBigItems="1" nbRows="1"></group>
+			<group id="lwd" nbBigItems="1" nbRows="1"></group>
+			<group id="PLT_prod" nbBigItems="1" nbRows="1"></group>			
+			<group id="pp_update" nbBigItems="1" nbRows="1"></group>
+			<group id="help_spd" nbBigItems="1" nbRows="1"></group>
+			<group id="test" nbBigItems="1" nbRows="1"></group>			
+		</area>
+	</TBarAdvancedOrganizer>
+</CustomMenus>
+
+
+
